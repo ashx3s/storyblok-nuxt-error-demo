@@ -9,7 +9,6 @@
     "nuxt3": "latest"
   },
   "dependencies": {
-    "@storyblok/nuxt": "^3.0.0-beta.3",
     "axios": "^0.21.4"
   }
 }
