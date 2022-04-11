@@ -39,7 +39,10 @@
         <ol>
           <li>Comment out all storyblok content from your config</li>
           <li><code>npm remove @storyblok/nuxt</code></li>
-          <li><code>rm -rf node_modules package-lock.json</code> -- necessary before reinstall</li>
+          <li>
+            <code>rm -rf node_modules package-lock.json</code> -- necessary
+            before reinstall
+          </li>
           <li><code>npm i</code></li>
           <li><code>npm run dev</code> -- to verify that it worked</li>
           <li><code>npm i @storyblok/nuxt@next</code></li>
@@ -47,24 +50,25 @@
         </ol>
         <p>Now everything should work again</p>
         <div>
-          <h4>Note: If you don't remove the package-lock.json file, you will get this error</h4>
+          <h4>
+            Note: If you don't remove the package-lock.json file, you will
+            get this error
+          </h4>
           <code>
-             ERROR  Cannot start nuxt:  Cannot find module '@nuxt/vite-builder'                                                                 14:42:09
-Require stack:
-- storyblok-nuxt-error-demo/index.js
-
-  Require stack:
-  - index.js
-  at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
-  at Function.resolve (node:internal/modules/cjs/helpers:108:19)
-  at Function._resolve [as resolve] (node_modules/jiti/dist/jiti.js:1:192841)
-  at resolveModule (node_modules/@nuxt/kit/dist/index.mjs:236:29)
-  at importModule (node_modules/@nuxt/kit/dist/index.mjs:259:24)
-  at bundle (node_modules/nuxt3/dist/index.mjs:1664:82)
-  at build (node_modules/nuxt3/dist/index.mjs:1639:11)
-  at async Promise.all (index 1)
-  at async load (node_modules/nuxi/dist/chunks/dev.mjs:6760:9)
-  at async Object.invoke (node_modules/nuxi/dist/chunks/dev.mjs:6801:5)
+            ERROR Cannot start nuxt: Cannot find module
+            '@nuxt/vite-builder' 14:42:09 Require stack: -
+            storyblok-nuxt-error-demo/index.js Require stack: - index.js at
+            Function.Module._resolveFilename
+            (node:internal/modules/cjs/loader:933:15) at Function.resolve
+            (node:internal/modules/cjs/helpers:108:19) at Function._resolve
+            [as resolve] (node_modules/jiti/dist/jiti.js:1:192841) at
+            resolveModule (node_modules/@nuxt/kit/dist/index.mjs:236:29) at
+            importModule (node_modules/@nuxt/kit/dist/index.mjs:259:24) at
+            bundle (node_modules/nuxt3/dist/index.mjs:1664:82) at build
+            (node_modules/nuxt3/dist/index.mjs:1639:11) at async
+            Promise.all (index 1) at async load
+            (node_modules/nuxi/dist/chunks/dev.mjs:6760:9) at async
+            Object.invoke (node_modules/nuxi/dist/chunks/dev.mjs:6801:5)
           </code>
         </div>
       </section>
@@ -76,6 +80,8 @@ Require stack:
 h1,
 h2,
 h3,
+h4,
+li,
 p {
   font-family: sans-serif;
 }
