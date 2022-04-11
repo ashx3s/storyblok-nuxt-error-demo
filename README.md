@@ -1,29 +1,14 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Storyblok Module Error Demo
 
-We recommend to look at the [documentation](https://v3.nuxtjs.org).
+This repo has been made to explore a bug regarding the storyblok module for nuxt 3.
 
-## Setup
+## Issue
 
-Make sure to install the dependencies
+- base concern: storyblok module cannot find the composition api
+- relevant situation: after deleting node_modules or pulling and installing
+- temporary fix:
+  - remove the storyblok module and comment it out from the config
+  - reinstall everything
+  - **then** install storyblok module
 
-```bash
-yarn install
-```
-
-## Development
-
-Start the development server on http://localhost:3000
-
-```bash
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-yarn build
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+### Notes
