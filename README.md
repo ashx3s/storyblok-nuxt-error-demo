@@ -5,11 +5,11 @@ This repo has been made to explore a bug regarding the storyblok module for nuxt
 ## Issue
 
 - base concern: storyblok module cannot find the composition api
-- relevant situation: after deleting `node_modules` and the `package-lock.json` or pulling and then installing
+- relevant situation: after deleting `node_modules/` folder and the `package-lock.json` file
 - Main issue seems to be that when storyblok is installed with everything else using `npm i`, it doesn't read other files correctly
 
-
 ### Fix
+
 - Comment out all storyblok content from your config
 - `npm remove @storyblok/nuxt` -- **Don't add @next here**
 - `rm -rf node_modules package-lock.json` -- necessary before reinstall
@@ -20,4 +20,5 @@ This repo has been made to explore a bug regarding the storyblok module for nuxt
 - Now it should work as normal
 
 ### Notes
-- If you do not remove the `package-lock.json` file, then you will get an error 
+
+- If you do not remove the `package-lock.json` file, then you will get an error
